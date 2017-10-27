@@ -1,0 +1,31 @@
+
+$custom-neat-grid: (
+  columns: 12,
+  gutter: 50px,
+  media: 1000px,
+);
+
+$tablet: (
+media: 500px,
+);
+
+.middle-grid {
+  @include grid-column;
+}
+
+.card {
+  @include grid-column(12 of 12);
+
+  @include grid-media($custom-neat-grid){
+    @include grid-column(4);
+  };
+
+  // @include grid-media($tablet){
+  //   @include grid-column(4);
+  // };
+}
+
+#hero {
+  width: 100%;
+  height: 300px;
+}
