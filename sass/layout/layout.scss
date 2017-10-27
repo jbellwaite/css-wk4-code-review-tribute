@@ -1,3 +1,5 @@
+$color: hsl(120deg, 100%, 50%);
+
 body {
   box-sizing: border-box;
   margin: 0;
@@ -9,9 +11,12 @@ $tablet-grid: (
   media: 1000px,
 );
 
-
-#hero-background img {
+#hero-background {
   @include size(100% 300px);
+}
+
+#hero-bottom {
+  background-color: ;
 }
 
 .middle, .nav-wrapper {
@@ -32,4 +37,8 @@ $tablet-grid: (
     @include grid-column(4);
     background-color: pink;
   };
+}
+
+.card {
+  width: 10vw;
 }
