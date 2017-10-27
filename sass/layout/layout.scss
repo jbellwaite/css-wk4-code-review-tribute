@@ -1,22 +1,25 @@
-$color: hsl(120deg, 100%, 50%);
+$blue: hsla(192, 100%, 62%, 1);
+$blue-ish: hsla(192, 100%, 62%, 0.5);
 
 body {
   box-sizing: border-box;
   margin: 0;
+  background-color: $blue-ish;
 }
 
 $tablet-grid: (
   columns: 12,
-  gutter: 50px,
+  gutter: 25px,
   media: 1000px,
 );
 
-#hero-background {
-  @include size(100% 300px);
+#hero-background img{
+  @include size(100% 400px);
 }
 
-#hero-bottom {
-  background-color: ;
+#hero {
+  background-color: $blue;
+  text-align: center;
 }
 
 .middle, .nav-wrapper {
@@ -25,20 +28,40 @@ $tablet-grid: (
 
 .middle-grid {
   @include grid-column(12);
-  background-color: gray;
-  margin: 0;
+  // background-color: gray;
 }
 
 .card {
   @include grid-column(12 of 12);
-  background-color: yellow;
-
+  height: 20em;
+  margin-bottom: 5%;
   @include grid-media($tablet-grid){
     @include grid-column(4);
-    background-color: pink;
+    // height: 100%;
   };
 }
 
-.card {
-  width: 10vw;
+#card1 {
+  @include card(url(../img/card1.jpg)) ;
+}
+
+#card2 {
+  @include card(url(../img/card2.jpg)) ;
+}
+
+#card3 {
+  @include card(url(../img/card3.jpg)) ;
+}
+
+.card-content {
+  background-color: $blue-ish;
+  position: absolute;
+  @include size(100% 50%);
+  bottom: 0;
+  display: none;
+}
+
+#card1:hover .card-content, #card2:hover .card-content, #card3:hover .card-content {
+  background-color: $blue-ish;
+  display: block;
 }

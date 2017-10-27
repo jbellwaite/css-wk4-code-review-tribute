@@ -1,10 +1,15 @@
 body {
   box-sizing: border-box;
-  margin: 0; }
+  margin: 0;
+  background-color: rgba(61, 216, 255, 0.5); }
 
 #hero-background img {
-  height: 300px;
+  height: 400px;
   width: 100%; }
+
+#hero {
+  background-color: #3dd8ff;
+  text-align: center; }
 
 .middle, .nav-wrapper {
   max-width: 900px;
@@ -18,20 +23,54 @@ body {
 .middle-grid {
   width: calc(100% - 40px);
   float: left;
-  margin-left: 20px;
-  background-color: gray;
-  margin: 0; }
+  margin-left: 20px; }
 
 .card {
   width: calc(100% - 40px);
   float: left;
   margin-left: 20px;
-  background-color: yellow; }
+  height: 20em;
+  margin-bottom: 5%; }
   @media only screen and (min-width: 1000px) {
     .card {
-      width: calc(33.3333333333% - 66.6666666667px);
+      width: calc(33.3333333333% - 33.3333333333px);
       float: left;
-      margin-left: 50px;
-      background-color: pink; } }
+      margin-left: 25px; } }
+
+#card1 {
+  background-image: url(../img/card1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  height: 100%;
+  width: 100%; }
+
+#card2 {
+  background-image: url(../img/card2.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  height: 100%;
+  width: 100%; }
+
+#card3 {
+  background-image: url(../img/card3.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  height: 100%;
+  width: 100%; }
+
+.card-content {
+  background-color: rgba(61, 216, 255, 0.5);
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  bottom: 0;
+  display: none; }
+
+#card1:hover .card-content, #card2:hover .card-content, #card3:hover .card-content {
+  background-color: rgba(61, 216, 255, 0.5);
+  display: block; }
 
 /*# sourceMappingURL=styles.css.map */

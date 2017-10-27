@@ -4,3 +4,11 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+@mixin card($url) {
+  background-image: $url;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  @include size(100%);
+}
