@@ -48,28 +48,33 @@ $tablet-grid: (
 }
 
 
+
+
 #circle1 {
-  @include circle(20vh, $black-lt, 50, 50)
+  @include circle(60vw, $red, 10%, 10%);
+}
+
+#circle2 {
+  @include circle(45vw, mix($red, $orange), 5%, 50%);
 }
 
 #circle3 {
-  @include circle(15vh,white, 75px, 100px);
+  @include circle(25vh,$orange,
+  1%, 1%);
 }
 
 #circle4 {
-  @include circle(15vh,$gray-lt, 100px, 150px);
+  @include circle(25vh,mix($orange, $yellow), 75px, 200px);
 }
 
-#circle5 {
-  @include circle(10vh,white, 100px, 175px);
-}
-
-#circle6 {
-  @include circle(8vh,$white-dk, 100px, 200px);
-}
 
 
 h4 {
   position: relative;
   margin-top: 40px;
+}
+
+h1 {
+  z-index: 5;
+  position: relative;
 }

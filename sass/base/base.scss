@@ -1,11 +1,10 @@
 $blue: hsla(192, 100%, 62%, 1);
 $blue-ish: hsla(192, 100%, 62%, 0.5);
-$pink: hsla(0, 73%, 70%, 0.8);
-$black: hsla(0°, 0%, 0%, 1);
-$black-lt: hsla(0°, 0%, 0%, 0.8);
-$gray-dk: hsla(0°, 0%, 0%, 0.6);
-$gray-lt: hsla(0°, 0%, 0%, 0.4);
-$white-dk: hsla(0°, 0%, 0%, 0.2);
+$red: hsla(3°, 90%, 61%, 0.5);
+$orange: hsla(36°, 90%, 61%,0.5);
+$yellow: hsla(53°, 90%, 61%,0.5);
+
+
 
 
 body {
@@ -14,6 +13,10 @@ body {
   // background-color: $blue-ish;
 }
 
+h4 {
+  font-weight: lighter;
+  font-style: italic;
+}
 .card-content {
   background-color: $blue-ish;
   position: absolute;

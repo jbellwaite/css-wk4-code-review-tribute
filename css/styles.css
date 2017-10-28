@@ -2,6 +2,10 @@ body {
   box-sizing: border-box;
   margin: 0; }
 
+h4 {
+  font-weight: lighter;
+  font-style: italic; }
+
 .card-content {
   background-color: rgba(61, 216, 255, 0.5);
   position: absolute;
@@ -71,51 +75,46 @@ body {
 
 #circle1 {
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(245, 75, 66, 0.5);
   position: absolute;
-  height: 20vh;
-  width: 20vh;
-  top: 50;
-  left: 50; }
+  height: 60vw;
+  width: 60vw;
+  top: 10%;
+  left: 10%; }
+
+#circle2 {
+  border-radius: 50%;
+  background-color: rgba(245, 124, 66, 0.5);
+  position: absolute;
+  height: 45vw;
+  width: 45vw;
+  top: 5%;
+  left: 50%; }
 
 #circle3 {
   border-radius: 50%;
-  background-color: white;
+  background-color: rgba(245, 173, 66, 0.5);
   position: absolute;
-  height: 15vh;
-  width: 15vh;
-  top: 75px;
-  left: 100px; }
+  height: 25vh;
+  width: 25vh;
+  top: 1%;
+  left: 1%; }
 
 #circle4 {
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(245, 199, 66, 0.5);
   position: absolute;
-  height: 15vh;
-  width: 15vh;
-  top: 100px;
-  left: 150px; }
-
-#circle5 {
-  border-radius: 50%;
-  background-color: white;
-  position: absolute;
-  height: 10vh;
-  width: 10vh;
-  top: 100px;
-  left: 175px; }
-
-#circle6 {
-  border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.2);
-  position: absolute;
-  height: 8vh;
-  width: 8vh;
-  top: 100px;
+  height: 25vh;
+  width: 25vh;
+  top: 75px;
   left: 200px; }
 
 h4 {
   position: relative;
   margin-top: 40px; }
+
+h1 {
+  z-index: 5;
+  position: relative; }
 
 /*# sourceMappingURL=styles.css.map */
