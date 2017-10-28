@@ -12,3 +12,12 @@
   position: relative;
   @include size(100%);
 }
+
+@mixin circle($size, $color, $top, $left) {
+  border-radius: 50%;
+  background-color: $color;
+  position: absolute;
+  @include size($size);
+  top: $top;
+  left: $left;
+}

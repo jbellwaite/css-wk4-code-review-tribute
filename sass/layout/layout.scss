@@ -1,11 +1,4 @@
-$blue: hsla(192, 100%, 62%, 1);
-$blue-ish: hsla(192, 100%, 62%, 0.5);
 
-body {
-  box-sizing: border-box;
-  margin: 0;
-  background-color: $blue-ish;
-}
 
 $tablet-grid: (
   columns: 12,
@@ -13,13 +6,14 @@ $tablet-grid: (
   media: 1000px,
 );
 
-#hero-background img{
-  @include size(100% 400px);
-}
+// #hero-background img{
+//   @include size(100% 400px);
+// }
 
 #hero {
-  background-color: $blue;
+  // background-color: $blue;
   text-align: center;
+  @include size(100% 200px);
 }
 
 .middle, .nav-wrapper {
@@ -53,15 +47,29 @@ $tablet-grid: (
   @include card(url(../img/card3.jpg)) ;
 }
 
-.card-content {
-  background-color: $blue-ish;
-  position: absolute;
-  @include size(100% 50%);
-  bottom: 0;
-  display: none;
+
+#circle1 {
+  @include circle(20vh, $black-lt, 50, 50)
 }
 
-#card1:hover .card-content, #card2:hover .card-content, #card3:hover .card-content {
-  background-color: $blue-ish;
-  display: block;
+#circle3 {
+  @include circle(15vh,white, 75px, 100px);
+}
+
+#circle4 {
+  @include circle(15vh,$gray-lt, 100px, 150px);
+}
+
+#circle5 {
+  @include circle(10vh,white, 100px, 175px);
+}
+
+#circle6 {
+  @include circle(8vh,$white-dk, 100px, 200px);
+}
+
+
+h4 {
+  position: relative;
+  margin-top: 40px;
 }
