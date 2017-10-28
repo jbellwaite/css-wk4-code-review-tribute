@@ -6,23 +6,57 @@ $tablet-grid: (
   media: 1000px,
 );
 
-// #hero-background img{
-//   @include size(100% 400px);
-// }
 
 #hero {
-  // background-color: $blue;
   text-align: center;
-  @include size(100% 200px);
+  @include size(100% 150px);
+  overflow: hidden;
+}
+
+#circle1 {
+  @include circle(30vw, $red, 10%, 10%);
+}
+
+#circle2 {
+  @include circle(45vw, mix($red, $orange), 0%, 25%);
+}
+
+#circle3 {
+  @include circle(30vh,$orange, 1%, 2%);
+}
+
+#circle4 {
+  @include circle(20vw,mix($orange, $yellow), 1%, 65%);
+}
+
+#circle5 {
+  @include circle(30vw, mix($red, $yellow), 15%, 55%);
+}
+
+h3 {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+h4 {
+  position: relative;
+  margin-top: 40px;
+}
+
+h1 {
+  z-index: 5;
+  position: relative;
 }
 
 .middle, .nav-wrapper {
   @include wrapper;
+  overflow: hidden;
 }
 
 .middle-grid {
   @include grid-column(12);
-  // background-color: gray;
+  text-align: center;
 }
 
 .card {
@@ -31,8 +65,8 @@ $tablet-grid: (
   margin-bottom: 5%;
   @include grid-media($tablet-grid){
     @include grid-column(4);
-    // height: 100%;
   };
+
 }
 
 #card1 {
@@ -45,36 +79,4 @@ $tablet-grid: (
 
 #card3 {
   @include card(url(../img/card3.jpg)) ;
-}
-
-
-
-
-#circle1 {
-  @include circle(60vw, $red, 10%, 10%);
-}
-
-#circle2 {
-  @include circle(45vw, mix($red, $orange), 5%, 50%);
-}
-
-#circle3 {
-  @include circle(25vh,$orange,
-  1%, 1%);
-}
-
-#circle4 {
-  @include circle(25vh,mix($orange, $yellow), 75px, 200px);
-}
-
-
-
-h4 {
-  position: relative;
-  margin-top: 40px;
-}
-
-h1 {
-  z-index: 5;
-  position: relative;
 }

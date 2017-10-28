@@ -3,6 +3,7 @@ $blue-ish: hsla(192, 100%, 62%, 0.5);
 $red: hsla(3°, 90%, 61%, 0.5);
 $orange: hsla(36°, 90%, 61%,0.5);
 $yellow: hsla(53°, 90%, 61%,0.5);
+$white: hsla(320°, 100%, 100%,0.8);
 
 
 
@@ -17,15 +18,17 @@ h4 {
   font-weight: lighter;
   font-style: italic;
 }
+
 .card-content {
-  background-color: $blue-ish;
   position: absolute;
   @include size(100% 50%);
   bottom: 0;
+  right: 0;
   display: none;
 }
 
 #card1:hover .card-content, #card2:hover .card-content, #card3:hover .card-content {
-  background-color: $blue-ish;
+  background: linear-gradient( transparent, $yellow);
   display: block;
+  color: white;
 }
